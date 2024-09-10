@@ -1,6 +1,6 @@
 #사용할 base 이미지 선택
 #ec2 아키텍처 arm64v8
-FROM arm64v8/eclipse-tenurin:17-jdk-focal
+FROM arm64v8/eclipse-temurin:17-jdk-focal
 
 #build/libs/ 에 있는 jar 파일을 JAR_FILE 변수에 저장
 ARG JAR_FILE=build/libs/*.jar
