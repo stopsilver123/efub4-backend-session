@@ -45,8 +45,8 @@ class UserControllerTest {
 
         // when & then
         mvc.perform(post("/test/user")
-                .contentType("application/json")
-                .content(requestBody))
+                        .contentType("application/json")
+                        .content(requestBody))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("name").value(name));
 
